@@ -17,5 +17,10 @@ namespace Calculator
         {
             return mulitpliendA * multipliendB;
         }
+
+        public int divide(int dividendA, int dividendB)
+        {
+            return dividendA / dividendB;
+        }
     }
 }

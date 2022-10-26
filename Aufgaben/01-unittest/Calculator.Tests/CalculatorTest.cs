@@ -54,5 +54,41 @@ namespace Calculator.Tests
             // Then
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void TestDivideTwentyfourDividedbySixIsFour()
+        {
+            // Given
+            int a = 24;
+            int b = 6;
+            int expected = 4;
+            Calculator calculator = new Calculator();
+
+            // When
+            int actual = calculator.divide(a, b);
+
+            // Then
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void TestDivideByZeroException()
+        {
+            // Given
+            int a = 24;
+            int b = 0;
+            int expected = 3;
+            Calculator calculator = new Calculator();
+
+            // When
+            int actual;
+            // Then
+            Assert.Throws<DivideByZeroException>(() =>
+
+             actual = calculator.divide(a, b)
+
+            );
+            
+        }
     }
 }
