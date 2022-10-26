@@ -36,5 +36,23 @@ namespace Calculator.Tests
             // Then
             Assert.Equal(expected, actual);
         }
+
+
+
+        [Fact]
+        public void TestMultiplicateFourTimesTwoIsEight()
+        {
+            // Given
+            int a = 4;
+            int b = 2;
+            int expected = 8;
+            Calculator calculator = new Calculator();
+
+            // When
+            int actual = calculator.multiplicate(a, b);
+
+            // Then
+            Assert.Equal(expected, actual);
+        }
     }
 }
