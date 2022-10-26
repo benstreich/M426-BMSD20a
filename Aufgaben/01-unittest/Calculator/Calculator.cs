@@ -21,6 +21,11 @@ namespace Calculator
         public int divide(int dividendA, int dividendB)
         {
             return dividendA / dividendB;
+
+            if (dividendA == 0 || dividendB == 0) throw new ArgumentException();
+
+            return dividendA / dividendB;
+
         }
     }
 }

@@ -83,7 +83,7 @@ namespace Calculator.Tests
             // When
             int actual;
             // Then
-            Assert.Throws<DivideByZeroException>(() =>
+            Assert.Throws<ArgumentException>(() =>
 
              actual = calculator.divide(a, b)
 
